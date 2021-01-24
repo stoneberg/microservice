@@ -51,8 +51,8 @@ public class OrderService {
         
         // do a rest call to payment and pass the order id
         try {
-        	//responseEntity  = restTemplate.postForEntity("http://PAYMENT-SERVICE/v1/api/payment-service/payment", paymentDto, PaymentDto.class);
-        	responseEntity  = restTemplate.postForEntity("http://localhost:9192/v1/api/payment-service/payment", paymentDto, PaymentDto.class);
+        	responseEntity  = restTemplate.postForEntity("http://PAYMENT-SERVICE/v1/api/payment-service/payment", paymentDto, PaymentDto.class);
+        	//responseEntity  = restTemplate.postForEntity("http://localhost:9192/v1/api/payment-service/payment", paymentDto, PaymentDto.class);
 		} catch (Exception e) {
 			throw new TransactionException(TransactionExType.PAYMENT_FAIL);
 		}

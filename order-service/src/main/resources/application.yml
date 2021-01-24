@@ -18,6 +18,9 @@ spring:
     password:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
+    
+logging:
+  config: classpath:logback/logback-spring.xml    
 
 eureka:
   client:
@@ -27,3 +30,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     hostname: localhost
+    
