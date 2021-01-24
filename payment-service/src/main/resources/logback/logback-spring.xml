@@ -56,8 +56,8 @@
         </rollingPolicy>
     </appender>   
 
-    <!-- local -->
-    <springProfile name="local">
+    <!-- default, local -->
+    <springProfile name="default, local">
         <logger name="com.stone.payment.service.ms" level="INFO" additivity="false">
             <appender-ref ref="STDOUT" />
             <appender-ref ref="TRACE_FILEOUT" />
