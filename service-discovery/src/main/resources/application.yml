@@ -1,5 +1,9 @@
 server:
   port: 8761
+
+spring:
+  banner:
+    location: classpath:banner/banner.txt
   
 eureka:
   client:
